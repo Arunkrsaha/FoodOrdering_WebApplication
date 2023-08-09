@@ -1,0 +1,246 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Navigation bar */
+#navbar {
+  display: flex;
+  border: 2px solid black;
+  position: sticky;
+  top: 0px;
+  align-items: center;
+  /* justify-content: center; */
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+/* Navigation bar: logo */
+#logo img {
+  height: 75px;
+  width: 75px;
+  margin-left: 20px;
+  margin-top: 8px;
+  /* border: 2px solid red; */
+}
+/* Navigation bar: logo text */
+.logotext {
+  margin: 6px 12px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-family: "Bacasime Antique", serif;
+  font-weight: bolder;
+  /* border: 2px solid green; */
+}
+/* Navigation bar: List styling */
+#navbar ul {
+  display: flex;
+  position: absolute;
+  /* top: 43px;
+  right: 49px; */
+  font-size: 30px;
+  padding-left: 450px;
+  /* border: 2px solid yellowgreen; */
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 20px;
+  /* padding-left: 100px; */
+}
+#navbar ul li a {
+  color: white;
+  padding: 3px 42px;
+  display: block;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 100;
+  font-family: "Bacasime Antique", serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Ubuntu", sans-serif;
+}
+#navbar ul li a:hover {
+  color: burlywood;
+  background-color: black;
+}
+
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+#home::before {
+  content: "";
+  background: url(Image/bg1.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 700px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 10px;
+  color: rgb(72, 54, 3);
+}
+#home p {
+  color: rgb(124, 72, 5);
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Bree Serif", serif;
+}
+.btn {
+  padding: 6px 20px;
+  color: white;
+  background-color: #ad4e4e;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin: 17px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: brown;
+}
+
+/* sevices section */
+#sevicecontainer h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  /* font-family: "Ubuntu", sans-serif; */
+  margin-bottom: -15px;
+  margin-top: 110px;
+}
+#service {
+  display: flex;
+  margin: 50px;
+  /* border: 2px solid red; */
+}
+#service .box {
+  border: 2px solid brown;
+  background-color: rgb(243 231 231);
+  padding: 34px;
+  margin: 4px 5px;
+  border-radius: 23px;
+}
+#service .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+#service h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bacasime Antique", serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#service p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Bree Serif", serif;
+}
+
+/* client section */
+#clientsection {
+  position: relative;
+}
+#clientsection::before {
+  content: "";
+  position: absolute;
+  background: url(Image/bg2.jpg);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+#clientsection h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  /* font-family: "Bacasime Antique", serif; */
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 30px;
+}
+#clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#clients .clientitem img {
+  height: 124px;
+}
+.clientitem {
+  padding: 45px;
+}
+
+/* Contact section */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url(Image/contact\ us.jpg) no-repeat center center/cover;
+}
+#contact h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  /* font-family: "Bacasime Antique", serif; */
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 30px;
+}
+#contactbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contactbox input,
+#contactbox textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1rem;
+  border: 2px solid rgb(100 92 92);
+  background-color: rgb(230, 218, 205);
+}
+#contactbox label {
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+  /* font-family: "Bacasime Antique", serif; */
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+}
